@@ -25,9 +25,17 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
+      .when('/formazione', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/contatti', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
+      })
+      .when('/esperienze', {
+        templateUrl: 'views/experiences.html',
+        controller: 'ExperiencesCtrl'
       })
       .otherwise({
         redirectTo: '/'

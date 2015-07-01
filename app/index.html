@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -32,15 +33,16 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">curriculum</a>
+            <a class="navbar-brand" href="#/">Federico Querini</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#/formazione">Formazione</a></li>
+              <li><a ng-href="#/esperienze">Esperienze</a></li>
+              <li><a ng-href="#/contatti">Contatti</a></li>
             </ul>
           </div>
         </div>
@@ -53,7 +55,14 @@
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p>
+          <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+
+          <span class="glyphicon glyphicon-envelope">
+          <a href="mailto:federico.querini@gmail.com">federico.querini@gmail.com</a>
+          <span class="glyphicon glyphicon-earphone"> 340-820-1916
+          <span class="glyphicon glyphicon-user"> Skype: fedrico.querini
+        </p>
       </div>
     </div>
 
@@ -82,6 +91,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -89,6 +99,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/experiences.js"></script>
         <!-- endbuild -->
 </body>
 </html>
