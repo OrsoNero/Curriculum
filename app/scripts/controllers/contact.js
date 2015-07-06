@@ -13,5 +13,6 @@ angular.module('curriculumApp')
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
-    ];
-  });
+    ]
+  }
+);
